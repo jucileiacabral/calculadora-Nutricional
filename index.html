@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalcNutri</title>
+  <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+  <main >
+    <div class="container">
+      <div class="title">Cálculos Nutricionais</div>
+      <div class="input">
+        <label>Paciente:</label>
+        <input type="text" id="paciente">
+      </div>
+      <div class="input">
+        <label>Altura:</label>
+        <input type="number" id ="altura">
+    </div>
+    <div class="input">
+      <label>Peso:</label>
+      <input type="number " id="peso">
+    </div>
+   <div class="input">
+      <label>Idade:</label>
+      <input type="number " id="idade">
+    </div>
+    <div class="input">
+      <label>Gênero:</label>
+      <input type="string " id="genero">
+      </div>
+      <div class="input">
+        <label>Nível de Atividade Física:</label>
+        </div>
+            
+          <div class="Af " id='atividade'> 
+           <input type="radio" value="1.2" name="campo-radio" id="campo-radio1" />  
+        <label for="campo-radio1">Sedentário</label> 
+            <input type="radio" value="1.5" name="campo-radio" id="campo-radio2" /> 
+              <label for="campo-radio2">Pouco Ativo</label>
+                 <input type="radio" value="1.8" name="campo-radio" id="campo-radio3" />   
+                    <label for="campo-radio3">Ativo</label> 
+                       </div>
+
+         <button id="calcular">Calcular</button>
+
+      <div class="result" id ="resultado"></div> 
+      
+  </div>
+</main>
+<script src ="./functions.js"></script>
+</body>
+</html>
